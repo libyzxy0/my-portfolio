@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #272727;
+    --secondary: #2bff82;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'IBM Plex Mono', monospace;
+}
+nav {
+    height: 3rem;
+}
+nav.active {
+    height: 15.5rem;
+}
+nav h1 {
+    font-weight: 150;
+    font-size: 21px;
+    margin: 18px 21px;
+    color: var(--primary);
+    display: inline-block;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+    background-color: #ffffff;
+}
+.menu-list.active {
+    display: block;
+}
+nav ul li {
+    margin-top: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+}
+.nav_line {
+    border-top: 0.8px solid gainsboro;
+    margin: 17px 20px;
+}
+.line {
+    border-top: 0.8px solid gainsboro;
+    margin: 17px 0px;
+}
+.fline {
+    border-top: 0.8px solid gainsboro;
+    margin: 10px 27px;
+}
+nav .menu_btn {
+    float: right;
+    position: relative;
+    top: 1rem;
+    right: 21px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 1.8rem;
+    height: 2rem;
+}
+.nav_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav_icons svg {
+    height: auto;
+    width: 1.6rem;
+    margin: 1.3rem 1.6rem;
+}
+.hero .container {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.hero .container h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 28px;
+}
+.hero .container p {
+    font-size: 17px;
+    font-weight: 200;
+    color: var(--primary);
+}
+.hero .container .p1 {
+    margin-top: 1rem;
+    color: var(--primary);
+}
+.hero .container .social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+.hero .container .social-links li {
+    font-size: 25px;
+    color: var(--primary);
+    margin: 10px 8px;
+}
+.projects {
+    list-style-type: none;
+}
+.projects h2 {
+    margin-top: 1rem;
+}
+.projects li {
+    margin-top: 1rem;
+}
+.projects li h3 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+.projects li h3:hover {
+    text-decoration: underline;
+}
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 6rem;
+    text-align: center;
+}
+footer .social {
+    margin-top: 0.5rem;
+}
+footer .social li {
+    font-size: 25px;
+    color: var(--primary);
+    margin: 0px 8px;
+}
+footer p {
+    margin-bottom: 1rem;
+}
