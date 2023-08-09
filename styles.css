@@ -105,6 +105,7 @@ nav .menu_btn {
     font-size: 25px;
     color: var(--primary);
     margin: 10px 8px;
+    transition: 0.3s;
 }
 .projects {
     list-style-type: none;
@@ -134,10 +135,14 @@ footer .social {
     margin-top: 0.5rem;
 }
 footer .social li {
-    font-size: 25px;
+    font-size: 21px;
     color: var(--primary);
     margin: 0px 8px;
+    transition: 0.3s;
 }
 footer p {
     margin-bottom: 1rem;
+}
+footer .social li:hover, .hero .container .social-links li:hover {
+  color: var(--secondary);
 }
