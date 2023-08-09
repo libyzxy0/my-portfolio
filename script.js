@@ -1,14 +1,18 @@
 let menuBtn = document.getElementById('menu-btn');
 let nav = document.getElementById('nav');
 let menuList = document.getElementById('menu-list')
-let svgClose = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-</svg>`;
-let svgOpen = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-</svg>`;
-
 var isOriginal = true;
+var theme = true;
+
+let changeTheme = document.getElementById('change-theme');
+changeTheme.addEventListener('click', () => {
+   if (theme) {
+    changeTheme.innerHTML = svgLight;
+  } else {
+    changeTheme.innerHTML = svgDark;
+  }
+  theme = !theme;
+})
 
 menuBtn.addEventListener('click', () => {
     if (isOriginal) {
@@ -20,3 +24,15 @@ menuBtn.addEventListener('click', () => {
     nav.classList.toggle("active");
     menuList.classList.toggle("active");
 })
+let inpText = `My name is Jan Liby Dela Costa, and I am 15 years old. I embarked on my journey within the tech community at a young age. I am a proficient Full Stack Web Developer, currently immersing myself in the study of MERN Stack Development. My passion lies in the continuous exploration of novel concepts, which I embrace with enthusiasm every day.`;
+let i = 0;
+let typingInterval;
+let txt = document.getElementById('desc');
+function typeWriter() {
+  txt.textContent += inpText.charAt(i);
+  i++;
+  if (i >= inpText.length) {
+      clearInterval(typingInterval);
+   }
+}
+typingInterval = setInterval(typeWriter, 30);

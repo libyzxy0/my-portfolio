@@ -72,10 +72,17 @@ nav .menu_btn {
     flex-direction: row;
     justify-content: center;
 }
-.nav_icons svg {
-    height: auto;
+.nav_icons button {
+    outline: none;
+    border: none;
+    background-color: transparent;
     width: 1.6rem;
-    margin: 1.3rem 1.6rem;
+    height: auto;
+    margin: 1.3rem 1.5rem;
+}
+svg {
+  fill: var(--primary);
+  stroke: var(--primary);
 }
 .hero .container {
     margin-top: 1rem;
@@ -83,7 +90,7 @@ nav .menu_btn {
     margin-right: 2rem;
 }
 .hero .container h1 {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     margin-bottom: 1rem;
     font-size: 28px;
 }
@@ -141,7 +148,7 @@ footer .social li {
     transition: 0.3s;
 }
 footer p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 footer .social li:hover, .hero .container .social-links li:hover {
   color: var(--secondary);
