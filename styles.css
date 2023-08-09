@@ -81,7 +81,6 @@ nav .menu_btn {
     margin: 1.3rem 1.5rem;
 }
 svg {
-  fill: var(--primary);
   stroke: var(--primary);
 }
 .hero .container {
