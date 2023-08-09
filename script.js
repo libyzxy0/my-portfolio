@@ -2,16 +2,43 @@ let menuBtn = document.getElementById('menu-btn');
 let nav = document.getElementById('nav');
 let menuList = document.getElementById('menu-list')
 var isOriginal = true;
-var theme = true;
-
+var isDark = true;
 let changeTheme = document.getElementById('change-theme');
+
+let theme = localStorage.getItem('theme');
+
+
+function setToLight() {
+  document.documentElement.style.setProperty('--primary', '#272614');
+  document.documentElement.style.setProperty('--secondary', '#2bff82');
+  document.documentElement.style.setProperty('--bg', '#ffffff');
+  document.documentElement.style.setProperty('--lines', 'gainsboro');
+  changeTheme.innerHTML = svgDark;
+}
+function setToDark() {
+  document.documentElement.style.setProperty('--primary', '#f5f5f5');
+  document.documentElement.style.setProperty('--secondary', '#2bff82');
+  document.documentElement.style.setProperty('--bg', '#222837');
+  document.documentElement.style.setProperty('--lines', '#121212');
+  changeTheme.innerHTML = svgLight;
+}
+if(theme != "dark" || !theme) {
+  setToLight()
+} else {
+  setToDark()
+}
+
 changeTheme.addEventListener('click', () => {
-   if (theme) {
+   if (isDark) {
     changeTheme.innerHTML = svgLight;
+    setToDark()
+    localStorage.setItem("theme", "dark")
   } else {
     changeTheme.innerHTML = svgDark;
+    setToLight()
+    localStorage.removeItem('theme');
   }
-  theme = !theme;
+  isDark = !isDark;
 })
 
 menuBtn.addEventListener('click', () => {
