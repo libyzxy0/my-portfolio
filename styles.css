@@ -8,7 +8,7 @@
     --primary: #272614;
     --secondary: #2bff82;
     --bg: #ffffff;
-    --lines: gainsboro;
+    --lines: gainsboro; 
 }
 */
 :root {
@@ -17,10 +17,15 @@
     --bg: #222837;
     --lines: #121212;
 }
+.bg-particle-light {
+    background-image: url('/bg-particle-light.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 html {
     scroll-behavior: smooth;
 }
-body {
+body {    
     font-family: 'IBM Plex Mono', monospace;
     background-color: var(--bg);
 }

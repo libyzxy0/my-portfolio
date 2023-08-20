@@ -7,13 +7,13 @@ let changeTheme = document.getElementById('change-theme');
 
 let theme = localStorage.getItem('theme');
 
-
 function setToLight() {
   document.documentElement.style.setProperty('--primary', '#272614');
   document.documentElement.style.setProperty('--secondary', '#2bff82');
   document.documentElement.style.setProperty('--bg', '#ffffff');
   document.documentElement.style.setProperty('--lines', 'gainsboro');
   changeTheme.innerHTML = svgDark;
+  document.body.classList.toggle("bg-particle-light")
 }
 function setToDark() {
   document.documentElement.style.setProperty('--primary', '#f5f5f5');
@@ -21,6 +21,7 @@ function setToDark() {
   document.documentElement.style.setProperty('--bg', '#222837');
   document.documentElement.style.setProperty('--lines', '#121212');
   changeTheme.innerHTML = svgLight;
+  document.body.classList.remove("bg-particle-light")
 }
 if(theme != "dark" || !theme) {
   setToLight()
@@ -62,4 +63,4 @@ function typeWriter() {
       clearInterval(typingInterval);
    }
 }
-typingInterval = setInterval(typeWriter, 30);
+typingInterval = setInterval(typeWriter, 30); 
