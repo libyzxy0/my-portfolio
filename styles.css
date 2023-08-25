@@ -247,32 +247,32 @@ footer .social li:hover, .hero .container .social-links li:hover {
   border-radius: 12px;
   border: 1.5px solid var(--secondary);
 }
-.about .container .b-cards {
+.b-cards {
   display: flex;
   justify-content: start;
   flex-direction: column;
 }
-.about .container .b-cards .card:nth-child(even) {
+.b-cards .card:nth-child(even) {
   border-left: 2px solid var(--secondary);
 }
-.about .container .b-cards .card {
+.b-cards .card {
   border-left: 2px solid var(--primary);
   height: auto;
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.about .container .b-cards .card h4 {
+.b-cards .card h4 {
   margin-bottom: 0.3rem;
   margin-top: 4px;
   margin-left: 8px;
   font-size: 17px;
   color: var(--secondary);
 }
-.about .container .b-cards .card p {
+.b-cards .card p {
   font-size: 13px;
   margin-left: 8px;
   margin-bottom: 5px;
   font-weight: 200;
   color: var(--primary);
-    }
+}
