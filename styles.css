@@ -58,9 +58,6 @@ nav {
 nav.active {
     height: 14.5rem;
 }
-nav .menu_btn {
-  background-color: transparent;
-}
 nav h1 {
     font-weight: 100;
     font-size: 23px;
@@ -108,7 +105,7 @@ nav .menu_btn {
     right: 21px;
     outline: none;
     border: none;
-5r: transparent;
+    background-color: transparent;
     width: 1.8rem;
     height: 2rem;
 }
@@ -278,4 +275,4 @@ footer .social li:hover, .hero .container .social-links li:hover {
   margin-bottom: 5px;
   font-weight: 200;
   color: var(--primary);
-}
+    }
