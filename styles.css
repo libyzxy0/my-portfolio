@@ -276,3 +276,59 @@ footer .social li:hover, .hero .container .social-links li:hover {
   font-weight: 200;
   color: var(--primary);
 }
+/* Projects */
+.card-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.card-container .card {
+    height: auto;
+    width: 20rem;
+    background: var(--bg);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 12px 12px 7px 7px;
+    margin-top: 2rem;
+}
+.card-container .card .img img {
+    width: 100%;
+    height: 12rem;
+    border-radius: 12px 12px 0px 0px;
+}
+.card-container .card .info .badges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-container .card .info .badges img {
+    width: 3rem;
+    height: auto;
+    margin: 5px;
+    
+}
+.card-container .card .info {
+    margin: 15px;
+}
+.card-container .card .info h2 {
+    color: var(--secondary);
+    margin-top: 10px;
+}
+.card-container .card .info p {
+    color: var(--primary);
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+    .card-container {
+        justify-content: start;
+        flex-wrap: wrap; 
+        flex-direction: row;
+    }
+    .card-container .card {
+        flex: 1 0 calc(33.33% - 4rem);
+        margin: 1rem;
+        width: 25rem;
+    }
+}
