@@ -286,7 +286,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
 }
 .card-container .card {
     height: auto;
-    width: 20rem;
+    width: 100%;
     background: var(--bg);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 12px 12px 7px 7px;
