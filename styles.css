@@ -3,20 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
-:root {
-    --primary: #272614;
-    --secondary: #2bff82;
-    --bg: #ffffff;
-    --lines: gainsboro; 
-}
-:root {
-    --primary: #f5f5f5;
-    --secondary: #2bff82;
-    --bg: #222837;
-    --lines: #121212;
-}
-*/
 .bg-particle-light {
     background-image: url('/bg-particle-light.jpg');
     background-size: cover;
@@ -287,7 +273,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 25px;
 }
 .card-container .card {
     height: auto;
