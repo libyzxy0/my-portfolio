@@ -305,6 +305,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
 .card-container .card .info .badges {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 .card-container .card .info .badges img {
