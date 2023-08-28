@@ -22,6 +22,11 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.bg-particle-dark {
+    background-image: url('/bg-particle-dark.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 html {
     scroll-behavior: smooth;
 }
