@@ -273,7 +273,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    margin: 25px;
+    margin: 20px;
 }
 .card-container .card {
     height: auto;
