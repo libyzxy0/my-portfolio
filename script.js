@@ -19,7 +19,7 @@ function setToLight() {
 function setToDark() {
   document.documentElement.style.setProperty('--primary', '#f5f5f5');
   document.documentElement.style.setProperty('--secondary', '#2bff82');
-  document.documentElement.style.setProperty('--bg', '#222837');
+  document.documentElement.style.setProperty('--bg', '#212A40');
   document.documentElement.style.setProperty('--lines', '#121212');
   changeTheme.innerHTML = svgLight;
   document.body.classList.toggle("bg-particle-dark")
