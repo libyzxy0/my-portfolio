@@ -14,6 +14,7 @@ function setToLight() {
   document.documentElement.style.setProperty('--lines', 'gainsboro');
   changeTheme.innerHTML = svgDark;
   document.body.classList.toggle("bg-particle-light")
+  document.body.classList.remove("bg-particle-dark")
 }
 function setToDark() {
   document.documentElement.style.setProperty('--primary', '#f5f5f5');
@@ -21,6 +22,7 @@ function setToDark() {
   document.documentElement.style.setProperty('--bg', '#222837');
   document.documentElement.style.setProperty('--lines', '#121212');
   changeTheme.innerHTML = svgLight;
+  document.body.classList.toggle("bg-particle-dark")
   document.body.classList.remove("bg-particle-light")
 }
 if(theme != "dark" || !theme) {
