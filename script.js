@@ -100,3 +100,9 @@ function nextText() {
 }
 
 typingInterval = setInterval(typeWriter, 50);
+
+let modal = document.getElementById('modal');
+let buttonMessage = document.getElementById('msg-trigger');
+buttonMessage.addEventListener('click', () => {
+  modal.classList.toggle('active');
+})
