@@ -368,7 +368,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
 }
 .modal-content {
   height: 25rem;
-  width: 20rem;
+  width: 90%;
   background-color: var(--bg);
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
