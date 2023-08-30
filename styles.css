@@ -280,7 +280,7 @@ footer .social li:hover, .hero .container .social-links li:hover {
   padding: 9px 18px;
   border-radius: 20px;
   background-color: var(--secondary);
-  color: var(--primary);
+  color: #121212;
   font-family: 'IBM Plex Mono', monospace;
   transition: 0.3s;
 }
