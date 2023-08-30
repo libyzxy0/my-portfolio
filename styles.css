@@ -388,7 +388,8 @@ footer .social li:hover, .hero .container .social-links li:hover {
   font-weight: 400;
   margin-left: 1rem;
   color: var(--secondary);
-  padding: 5px 0;
+  padding-top: 8px;
+  padding-bottom: 5px;
   border-bottom: 2px solid var(--secondary);
 }
 
