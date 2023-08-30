@@ -77,7 +77,11 @@ function typeWriter() {
 
     if (i < 0) {
       clearInterval(typingInterval);
-      setTimeout(nextText, 1000); // Delay before switching to next text
+      if (currentTextIndex < texts.length - 1) {
+        setTimeout(nextText, 1000); // Delay before switching to next text
+      } else {
+        txt.textContent = texts[currentTextIndex]; // Display the last text
+      }
     }
   }
 }
@@ -88,7 +92,7 @@ function reverseType() {
 }
 
 function nextText() {
-  currentTextIndex = (currentTextIndex + 1) % texts.length;
+  currentTextIndex++;
   isReversed = false;
   i = 0;
   txt.textContent = '';
@@ -96,4 +100,3 @@ function nextText() {
 }
 
 typingInterval = setInterval(typeWriter, 50);
-
