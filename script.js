@@ -54,15 +54,46 @@ menuBtn.addEventListener('click', () => {
     nav.classList.toggle("active");
     menuList.classList.toggle("active");
 })
-let inpText = `My name is Jan Liby Dela Costa, and I am 15 years old. I embarked on my journey within the tech community at a young age. I am a Full Stack Web Developer, currently immersing myself in the study of MEVN Stack Development. My passion lies in the continuous exploration of novel concepts, which I embrace with enthusiasm every day.`;
+
+let texts = ["I'am Jan Liby Dela Costa", "A Full Stack Web Developer", "Liby!"];
+let currentTextIndex = 0;
 let i = 0;
+let isReversed = false;
 let typingInterval;
-let txt = document.getElementById('desc');
+let txt = document.getElementById('typ');
+
 function typeWriter() {
-  txt.textContent += inpText.charAt(i);
-  i++;
-  if (i >= inpText.length) {
+  if (!isReversed) {
+    txt.textContent += texts[currentTextIndex].charAt(i);
+    i++;
+
+    if (i >= texts[currentTextIndex].length) {
       clearInterval(typingInterval);
-   }
+      setTimeout(reverseType, 1000); // Delay before reversing
+    }
+  } else {
+    txt.textContent = texts[currentTextIndex].substr(0, i);
+    i--;
+
+    if (i < 0) {
+      clearInterval(typingInterval);
+      setTimeout(nextText, 1000); // Delay before switching to next text
+    }
+  }
 }
-typingInterval = setInterval(typeWriter, 30); 
+
+function reverseType() {
+  isReversed = true;
+  typingInterval = setInterval(typeWriter, 50);
+}
+
+function nextText() {
+  currentTextIndex = (currentTextIndex + 1) % texts.length;
+  isReversed = false;
+  i = 0;
+  txt.textContent = '';
+  typingInterval = setInterval(typeWriter, 50);
+}
+
+typingInterval = setInterval(typeWriter, 50);
+
