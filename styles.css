@@ -399,7 +399,9 @@ footer .social li:hover, .hero .container .social-links li:hover {
   flex-direction: column;
   margin-top: 0.7rem;
 }
-
+.input-group label {
+  color: var(--primary);
+}
 input[type="text"] {
   margin-top: 5px;
   padding: 6px 12px;
@@ -409,7 +411,7 @@ input[type="text"] {
   color: var(--primary);
   background-color: var(--bg);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--lines);
   appearance: none;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -430,9 +432,9 @@ input[type="email"] {
   font-weight: 400;
   line-height: 1.5;
   color: vat(-primary);
-  background-color: #fff;
+  background-color: var(--bg);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--lines);
   appearance: none;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -453,9 +455,9 @@ textarea {
   font-weight: 400;
   line-height: 2.5;
   color: var(--primary);
-  background-color: #fff;
+  background-color: var(--bg);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--lines);
   appearance: none;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
