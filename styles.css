@@ -329,6 +329,10 @@ footer .social li:hover, .hero .container .social-links li:hover {
 .card-container .card .info h2 {
     color: var(--secondary);
     margin-top: 10px;
+    transition: 0.2s;
+}
+.card-container .card .info h2:hover {
+  text-decoration: underline;
 }
 .card-container .card .info p {
     color: var(--primary);
